@@ -25,7 +25,7 @@ router.get('/foods/all-foods',foodsController.getAllFoodsController)
 router.get('/stages/all-stages',stagesController.getAllStagesController)
 
 //add number of participents
-router.post('/participens/add',jwtMiddleware,multerConfig.single('profileImage'),ordersController.addNumberOfParticipents)
+router.post('/participents/add',jwtMiddleware,multerConfig.single('profileImage'),ordersController.addNumberOfParticipents)
 
 //get number of particepents of a user
 router.get('/participens/get',jwtMiddleware,ordersController.getNumberOfParticipents)
